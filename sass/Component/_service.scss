@@ -1,0 +1,68 @@
+@import "../Mixin/mixin";
+@import "../Variable/variable";
+
+#service_part{
+    padding-bottom: 173px;
+    .title{
+        text-align: center
+    }
+    h3{
+        @include font($primary_color, 'Oxanium',  31.25px, normal, 700, normal);
+    }
+    h2{
+        @include font(#11111D, ' Raleway',   39.06px, normal, 800, normal);
+        padding-bottom: 86px;
+    }
+    .box{
+        border-radius: 16px;
+        border: 1px solid #FFF;
+        background: #fff;
+        box-shadow: 0px 0px 20px 5px rgba(63, 61, 86, 0.05);
+        padding: 67px 61px 49px;
+        transform: scale(1);
+        transition: all linear .4s;
+        &:hover{
+            box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.09);
+            transform: scale(1.04);
+        }
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 29px;
+    }
+    h5{
+        @include font(#464558, ' Raleway',   25px, normal, 800, normal);
+        text-align: center;
+        padding-bottom: 32px
+    }
+    p{
+        @include font(#7B7A8B, ' Raleway',   16px, normal, 400, 145%);
+        padding:0 20px 25px 0;
+    }
+    ul{
+        padding:0 0 55px 1rem;
+        list-style: disc;
+    }
+    li{
+        @include font(#7B7A8B, ' Raleway',   16px, normal, 400, 120%);
+        padding-bottom: 10px;
+    }
+    .btno{
+        text-align: center;
+    }
+    button{
+        @include button();
+        @include font($primary_color, 'Oxanium', 20px, normal, 700, normal);
+        background: transparent;
+        padding: 12px 91px;
+        border: 1px solid $primary_color;
+        border-radius: 5px;
+        transition: all linear .4s;
+        &:hover{
+            background: $primary_color;
+            color:#fff;
+        }
+    }
+   
+}

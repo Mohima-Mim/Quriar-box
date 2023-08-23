@@ -1,0 +1,37 @@
+@import "../Mixin/mixin";
+@import "../Variable/variable";
+
+.navbar{
+    background: radial-gradient(9917.17% 140.83% at 0.83% -0.00%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.15) 100%);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
+
+    .navbar-brand{
+        padding: 15px 0 29px;
+    }
+    .navbar-nav{
+        column-gap: 25px;
+    }
+    .nav-link{
+        @include font(#817382, 'Raleway', 16px, normal, 700, normal);
+        transition: all linear .4s;
+        &:hover{
+            color:$primary_color;
+        }
+    }
+    .active{
+        @include font(#F95C19 !important, 'Raleway', 16px, normal, 800, normal);
+    }
+    i{
+        @include icon(49px, 49px, center, 49px, #FFAF0F, 20px);
+        background: #FFEDC9;
+        border-radius: 6px;
+        margin: 0 9px 0 45px;
+    }
+    button{
+        @include font($primary_color, 'Oxanium',  20px, normal, 700, normal);
+        @include button();
+        background: #FFE4D9;
+        padding: 12px 20px;
+        border-radius: 5px;
+    }
+}

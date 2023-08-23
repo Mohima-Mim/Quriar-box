@@ -1,0 +1,20 @@
+@mixin font($color, $ff, $f_s, $fs, $fw, $lh){
+    color: $color;
+    font-family: $ff;
+    font-size: $f_s;
+    font-style: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+@mixin icon($w, $h, $ta, $lh, $color, $fs){
+    width: $w;
+    height: $h;
+    text-align: $ta;
+    line-height: $lh;
+    color: $color;
+    font-size: $fs;
+}
+@mixin button(){
+    outline: 0;
+    border: 0;
+}

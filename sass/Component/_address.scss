@@ -1,0 +1,71 @@
+@import "../Mixin/mixin";
+@import "../Variable/variable";
+
+#address_part{
+    padding-bottom: 183px;
+    .title{
+        text-align: center
+    }
+    h3{
+        @include font($primary_color, 'Oxanium',  31.25px, normal, 700, normal);
+    }
+    h2{
+        @include font(#11111D, ' Raleway',   39.06px, normal, 800, normal);
+        padding-bottom: 85px;
+    }
+    .contact{
+        background: #fff;
+        padding: 81px 0 88px 88px;
+    }
+    h4{
+        @include font(#464558, ' Raleway',   20px, normal, 700, 120%);
+        padding-bottom: 36px;
+        text-align: left;
+    }
+    .info{
+        display: flex;
+        column-gap: 13px;
+        align-items: center;
+        padding-bottom: 18px;
+    }
+    .icon_s{
+        color:#FFAF0F;
+        font-size: 22px
+    }
+    p{
+        @include font(#5C5B6C, ' Raleway',   16px, normal, 400, 120%);
+    }
+    .icon{
+        display: flex;
+        column-gap: 24px;
+        padding-top: 41px;
+    }
+    .icon_b{
+        @include icon(22px, 22px, center, 22px, #fff, 16px);
+        background: #EBEBF5;
+        border-radius: 4px;
+        transition: all linear .4s;
+        &:hover{
+            background: $primary_color;
+        }
+    }
+    .btnn{
+        text-align: center
+    }
+    button{
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
+        @include button();
+        @include font($primary_color, 'Oxanium', 20px, normal, 700, normal);
+        background: transparent;
+        padding: 22px 113px 19px;
+        border: 1px solid $primary_color;
+        border-radius: 5px;
+        transition: all linear .4s;
+        &:hover{
+            background: $primary_color;
+            color:#fff;
+        }
+    }
+}

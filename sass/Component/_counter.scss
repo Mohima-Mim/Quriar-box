@@ -1,0 +1,22 @@
+@import "../Mixin/mixin";
+@import "../Variable/variable";
+
+#counter_part{
+    padding-bottom: 162px;
+    .col-lg-12{
+        display: flex;
+        justify-content: space-between;
+    }
+    .box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h5{
+        @include font($primary_color, 'Raleway', 39px, normal, 800, 110%);
+        padding:19px 0 6px 0;
+    }
+    h6{
+        @include font(#464558, 'Raleway', 20px, normal, 700, 120%);
+    }
+}

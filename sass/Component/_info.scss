@@ -1,0 +1,54 @@
+@import "../Mixin/mixin";
+@import "../Variable/variable";
+
+#info_part{
+    padding-bottom: 200px;
+    .box{
+        width:872px;
+        display: flex;
+        margin: 0 auto;
+    }
+    h4{
+        @include font($primary_color, 'Oxanium',  24px, normal, 700, normal);
+        padding: 14px 0 20px;
+    }
+    h5{
+        @include font(#222132, 'Raleway',  39px, normal, 800, 110%);
+        padding-bottom: 9px
+    }
+    p{
+        @include font(#9291A1, 'Raleway',  25px, normal, 600, 120%);
+    }
+    .right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 35px;
+    }
+    input{
+        width: 432px;
+        outline: 0;
+        margin-bottom: 16px;
+        background: transparent;
+        border: 2px solid #C5C5D2;
+        border-radius: 8px;
+        @include font(#9291A1, 'Raleway',  16px, normal, 400, 120%);
+        padding: 15px 19px;
+    }
+    .btno{
+        text-align: center;
+    }
+    button{
+        @include button();
+        @include font($primary_color, 'Oxanium', 20px, normal, 700, normal);
+        background: transparent;
+        padding: 12px 130px;
+        border: 1px solid $primary_color;
+        border-radius: 5px;
+        transition: all linear .4s;
+        &:hover{
+            background: $primary_color;
+            color:#fff;
+        }
+    }
+}

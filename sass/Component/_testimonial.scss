@@ -1,0 +1,67 @@
+@import "../Mixin/mixin";
+@import "../Variable/variable";
+
+#testimonial_part{
+    padding-bottom: 280px;
+    .title{
+        text-align: center;
+        position: relative;
+    }
+    .quote{
+        position: absolute;
+        left: 303px;
+        top: -35px;
+    }
+    h3{
+        @include font($primary_color, 'Oxanium',  31.25px, normal, 700, normal);
+    }
+    h2{
+        @include font(#11111D, ' Raleway',   39.06px, normal, 800, normal);
+        padding-bottom: 89px;
+    }
+    .review{
+        width: 872px;
+        margin: 0 auto;
+        background: #fff;
+        box-shadow: 0px 0px 20px 5px rgba(0, 19, 119, 0.05);
+        border-radius: 16px;
+        padding: 39px 32px 38px 39px;
+    }
+    h6{
+        @include font($primary_color, ' Raleway',   25px, normal, 700, 120%);
+        padding-bottom: 11px
+    }
+    p{
+        @include font(#464558, ' Raleway', 16px, normal, 400, 145%);
+        padding:0 84px 16px 0;
+    }
+    .rating{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .icon{
+        display: flex;
+        column-gap: 8px;
+    }
+    i{
+        color: $primary_color;
+        font-size: 19px;
+    }
+    .details{
+        display: flex;
+        column-gap: 13px;
+        align-items: center;
+        text-align: right;
+    }
+    h5{
+        @include font(#222132, ' Raleway', 16px, normal, 700, 120%);
+    }
+    h4{
+        @include font(#222132, ' Raleway', 16px, normal, 400, 120%);
+    }
+    img{
+        border-radius: 50%;
+    }
+   
+}
